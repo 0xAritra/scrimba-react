@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background-color: #23252c;
+  color: white;
+  margin: 0;
+  height: 100vh;
+  /*  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  background-color: #1a1b21;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+
+.info > img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.info > p {
+  color: #f3bf99;
+  font-size: 1.25rem;
+}
+
+.info > a {
+  color: white;
+}
+
+.info-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-btns .btn {
+  margin: 1rem 0.5rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.info-btns .btn:hover {
+  cursor: pointer;
+}
+
+.info-btns span {
+  margin-left: 0.5rem;
+}
+
+.btn-lin {
+  background-color: #5093e2;
+  color: white;
+}
+
+.about,
+.interests {
+  margin: 0.75rem 0;
+}
+
+.about > p,
+.interests > ul {
+  margin: 0.5rem 0;
+  line-height: 1.1;
+}
+
+.interests-list > li {
+  list-style: none;
+  margin: 0.3rem 0;
+}
+
+.footer {
+  background-color: #161619;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.footer a {
+  color: #918e9b;
+}
