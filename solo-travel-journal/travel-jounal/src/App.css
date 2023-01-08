@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f55a5a;
+  color: white;
+  padding: 1.2rem 0;
+}
+
+.navbar h1 {
+  margin-left: 0.5rem;
+}
+
+.journal {
+  display: flex;
+  margin: 1rem 8rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.journal > img {
+  border-radius: 1rem;
+  width: 20rem;
+  height: 25rem;
+}
+
+.journal .details {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.location > span {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.details h2 {
+  font-size: 2rem;
+}
+
+.details h3 {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .journal {
+    margin: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .journal > img {
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+  .journal .details {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    max-width: 75%;
+  }
+}
