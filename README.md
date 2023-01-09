@@ -22,15 +22,19 @@ using CDN to add React, ReactDOM and Babel
 
 Functions can be reused!
 
-- page()
-- <Page />
+```
+page()
+<Page />
+```
 
 ### Parent / Child Components
 
+```
 <Page />
   <Header />
   <MainContent />
   <Footer />
+```
 
 Each Component in separate folder
 
@@ -90,4 +94,47 @@ return (
 
 ### [solo-travel-journal](./solo-travel-journal/travel-jounal/)
 
-[deployed-link]()
+[deployed-link](https://ari-react-travel-journal.netlify.app/)
+
+---
+
+## 3
+
+- read/write: interactive sites!
+
+* **Meme Generator**
+
+- event listeners
+- States -> variables inside components
+- React.useState("hello") -> returns ["hello", f()]
+- changing state w/ callback f()
+- changing array states - [...prevState, ]
+
+- Passing state to child & **Setting state from child**
+
+* mini-challenges like Boxes one can use used to demonstrate the examples really well!
+
+- dynamic styles \*
+- conditional rendering w/ ternary and &&
+
+* forms
+
+- forms state object
+
+- controlled components - `value={formData.email}` in input
+
+```
+<button></button>
+```
+
+inside a for is by default submit type
+
+```
+<form onSubmit={submitHandler}></form>
+```
+
+- useEffect - API fetch
+
+---
+
+Scrimba - Learn React
