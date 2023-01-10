@@ -135,6 +135,16 @@ inside a for is by default submit type
 
 - useEffect - API fetch
 
+### [meme-generator](./meme-generator/meme-generator/)
+
+[deployed link](https://ari-meme-gen.netlify.app/)
+
+---
+
+## 4
+
+- Notes App
+
 ---
 
 Scrimba - Learn React
