@@ -16,21 +16,30 @@ function App() {
         id: nanoid(),
       })
     }
+    // console.log(dices)
     return dices
   }
 
-  function onRoll() {
-    setDices(allNewDice())
+  function rollDice() {
+    const newDices = allNewDice() // can do better here lol, what if a new func for single die
+    setDices((prevDices) => prevDices.map((die, index) => (die.isHeld ? die : newDices[index])))
+  }
+
+  function holdDice(id) {
+    // console.log(id)
+    setDices((prevDices) =>
+      prevDices.map((die) => (die.id === id ? { ...die, isHeld: !die.isHeld } : die))
+    )
   }
 
   return (
     <main className="main">
       <div className="dice">
         {dices.map((die) => (
-          <Die key={die.id} value={die.value} />
+          <Die key={die.id} id={die.id} value={die.value} isHeld={die.isHeld} holdDice={holdDice} />
         ))}
       </div>
-      <button className="roll-btn" onClick={onRoll}>
+      <button className="roll-btn" onClick={rollDice}>
         Roll
       </button>
     </main>
